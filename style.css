@@ -46,3 +46,19 @@ img:hover {
     height: 800px;
     background-color: fuchsia;
 }
+
+#myCarousel {
+    background-color: red;
+}
+
+#myCarousel img {
+    height: 300px;
+    margin-top: 35px;
+}
+
+.carousel-inner p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #FFF;
+    font-size: 20px;
+}

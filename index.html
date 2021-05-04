@@ -6,26 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Apps</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <section id="apps">
-        <h1>Apps</h1>
-        <div class="line"></div>
-        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/OgRxe1cylB0qUsorZxHp11yQ94oOiRq3BttR3_dkEss/embed"></iframe>
-        <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/-j2G6kjFa3tVCAQaQAc02oTBPyQuc_CKaPzEEJLmybs/embed"></iframe>
-    </section>
-    <section id="games">
-        <h1>Games</h1>
-        <div class="line"></div>
-        <a href="https://studio.code.org/projects/spritelab/lhYm1-F2QeEcQ0TfHQj-ndV5VIcUJzsP9k8r7iSJUe4" target="_blank"><img src="download.png"></a>
-        <a href="https://studio.code.org/projects/flappy/EuYSEWMTe1Bc6aOuaRqA8l9DRTamCu5mpVStBqAYkcc" target="_blank"><img src="flappy.jpg"></a>
-    </section>
-    <section id="chatbot">
-        <h1>Chatbot</h1>
-        <div class="line"></div>
-        <iframe allow="microphone;" width="350" height="500" src="https://console.dialogflow.com/api-client/demo/embedded/f0348655-6e4b-4b09-af49-57452dcae0eb"></iframe>
-    </section>
+    <div class="container">
+        <section id="apps">
+            <h1>Apps</h1>
+            <div class="line"></div>
+            <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/OgRxe1cylB0qUsorZxHp11yQ94oOiRq3BttR3_dkEss/embed"></iframe>
+            <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/-j2G6kjFa3tVCAQaQAc02oTBPyQuc_CKaPzEEJLmybs/embed"></iframe>
+        </section>
+        <section id="games">
+            <h1>Games</h1>
+            <h2>Click on the games to explore</h2>
+            <h5>These games are built in app lab. Click on the game to play.</h5>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <center>
+                            <a href="https://studio.code.org/projects/spritelab/lhYm1-F2QeEcQ0TfHQj-ndV5VIcUJzsP9k8r7iSJUe4" target="_blank">
+                                <img src="download.png" class="img-responsive">
+                            </a>
+                            <div class="carousel-content">
+                                <p>Winnie the Pooh</p>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="item">
+                        <center>
+                            <a href="https://studio.code.org/projects/flappy/EuYSEWMTe1Bc6aOuaRqA8l9DRTamCu5mpVStBqAYkcc" target="_blank">
+                                <img src="flappy.jpg" class="img-responsive">
+                            </a>
+                            <div class="carousel-content">
+                                <p>Flappy Bird</p>
+                            </div>
+                        </center>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="chatbot">
+            <h1>Chatbot</h1>
+            <div class="line"></div>
+            <iframe allow="microphone;" width="350" height="500" src="https://console.dialogflow.com/api-client/demo/embedded/f0348655-6e4b-4b09-af49-57452dcae0eb"></iframe>
+        </section>
+    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
